@@ -2,7 +2,7 @@
 
 Dự án này cung cấp một hệ thống phân tích khách hàng và gợi ý sản phẩm cho ecommerce, bao gồm:
 
-## 🚀 Tính năng chính
+##  Tính năng chính
 
 - **RFM Analysis**: Phân tích Recency, Frequency, Monetary
 - **Customer Segmentation**: Phân nhóm khách hàng sử dụng K-means clustering
@@ -11,7 +11,7 @@ Dự án này cung cấp một hệ thống phân tích khách hàng và gợi �
 - **ETL Pipeline**: Xử lý dữ liệu giao dịch
 - **Demo Mode**: Chế độ demo với dữ liệu mẫu để test nhanh
 
-## 📁 Cấu trúc dự án
+##  Cấu trúc dự án
 
 ```
 ecommerce/
@@ -33,7 +33,7 @@ ecommerce/
 └── README.md                 # Hướng dẫn này
 ```
 
-## 🛠️ Cài đặt
+## 🛠 Cài đặt
 
 ### 1. Cài đặt Python dependencies
 ```bash
@@ -53,7 +53,7 @@ MSSQL_USERNAME = "your_username"
 MSSQL_PASSWORD = "your_password"
 ```
 
-## 🚀 Chạy dự án
+##  Chạy dự án
 
 ### Chạy Demo API (Khuyến nghị)
 ```bash
@@ -77,7 +77,7 @@ python main.py
 python src/pipeline.py
 ```
 
-## 📊 API Endpoints
+##  API Endpoints
 
 ### Demo API (demo_api.py)
 
@@ -135,11 +135,11 @@ GET /recommendations/{customer_id}?k=10
 Headers: X-API-KEY: secret123
 ```
 
-## 🔑 Authentication
+##  Authentication
 
 Sử dụng header `X-API-KEY: secret123` cho các endpoints cần xác thực.
 
-## 📈 Workflow
+##  Workflow
 
 1. **Data Loading**: Load dữ liệu giao dịch từ CSV
 2. **RFM Calculation**: Tính toán RFM scores
@@ -147,13 +147,13 @@ Sử dụng header `X-API-KEY: secret123` cho các endpoints cần xác thực.
 4. **Recommendation**: Tạo gợi ý sản phẩm
 5. **API Service**: Cung cấp dữ liệu qua REST API
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 - **Database Connection**: Kiểm tra thông tin kết nối trong `config.py`
 - **ODBC Driver**: Đảm bảo đã cài đặt SQL Server ODBC Driver
 - **Dependencies**: Chạy `pip install -r requirements.txt`
 
-## 📝 Ghi chú
+##  Ghi chú
 
 - **Demo Mode**: Sử dụng `demo_api.py` để chạy nhanh mà không cần database
 - **Production Mode**: Sử dụng `main.py` với SQL Server database
